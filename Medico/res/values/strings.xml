@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Medico</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_server">Conf. Servidor</string>
+    <string name="action_logout">Salir</string>
+    <string name="action_config">Configuracion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_clave">Clave</string>
+    <string name="boton_ingresar">Entrar</string>
+    <string name="recuperar_clave">¿Olvido su contraseña?</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_notificaciones">Notificaciones</string>
+    <string name="title_activity_pacientes">Pacientes</string>
+    <string name="title_activity_datos">Datos</string>
+    <string name="title_activity_solicitudes">Solicitudes</string>
+    <string name="title_activity_grafica_estadistica">Estadisticas</string>
+    <string name="title_activity_config_estadistica">Seleccionar Estadisticas</string>
+    <string name="hint_buscar_paciente">Nombre</string>
+    <string name="boton_buscar">Buscar</string>
+    <string name="title_activity_datos_paciente">Datos Paciente</string>
+    <string name="boton_paciente_diagnostico">Impresion Diagnostico</string>
+    <string name="boton_paciente_Estadisticas">Estadisticas</string>
+    <string name="boton_paciente_historial">Historial</string>
+    <string name="title_activity_diagnostico">Diagnostico</string>
+    <string name="boton_enviar">Enviar</string>
+    <string name="estadisticas_chequeo">Estadisticas</string>
+    <string name="tipo_chequeos">Tipo de chequeo</string>
+    <string name="label_fecha_inicio">Fecha inicial</string>
+    <string name="formato_fecha">Año-Mes-Dia</string>
+    <string name="label_fecha_fin">Fecha final</string>
+    <string name="fecha">Fecha</string>
+    <string name="ver">Ver</string>
+
+    <string-array name="tipos_chequeo">
+        <item>Glucosa</item>
+        <item>Presion</item>
+        <item>Arritmia</item>
+    </string-array>
+
+    <string name="title_activity_alertas_paciente">Alertas</string>
+    <string name="Correo">Correo</string>
+    <string name="Clave">Clave</string>
+    <string name="Nombres">Nombres</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="Sexo">Sexo</string>
+    <string name="Masculino">Masculino</string>
+    <string name="Femenino">Femenino</string>
+    <string name="Otros">Otros</string>
+    <string name="Numero_TP">Numero_TP</string>
+    <string name="Nacionalidad">Nacionalidad</string>
+    <string name="Especialidad">Especialidad</string>
+    <string name="Direccion">Direccion</string>
+    <string name="Telefono">Telefono</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="label_url">Url del Web Service</string>
+    <string name="hint_url_servidor">www.ejemplo.com:3000</string>
+    <string name="title_activity_servidor">Servidor</string>
+    <string name="title_form_registro">Formulario de Registro</string>
+    <string name="hint_nombres">Nombres</string>
+    <string name="hint_apellidos">Apellidos</string>
+    <string name="hint_numero_cedula">Numero de cedula</string>
+    <string name="sexo">Sexo</string>
+
+    <string-array name="tipo_sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string name="tipo_sexo">Tipo sexo</string>
+    <string name="fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="hint_numero_tp">Numero T. Profecional</string>
+    <string name="hint_nacionalidad">Nacionalidad</string>
+    <string name="hint_especializacion">Especializacion</string>
+    <string name="hint_direccion">Direccion</string>
+    <string name="departamentos">Departamento</string>
+    <string name="municipios">Municipio</string>
+    <string name="boton_registrar">Registrar</string>
+    <string name="hint_telefono">Telefono</string>
+    <string name="title_activity_register">Registrar Medico</string>
+    <string name="titulo_entidad">ENTIDAD</string>
+    <string name="titulo_autor">AUTOR</string>
+    <string name="titulo_custodio">CUSTODIO</string>
+    <string name="title_activity_historial">Historial (HL7)</string>
+    <string name="texto_recuperar_cuenta">Correo electronico:</string>
+    <string name="editar_datos">Editar Datos</string>
+    <string name="btn_editar_datos">Editar</string>
+    <string name="cedula">Cedula</string>
+
+</resources>

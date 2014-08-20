@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tesis.medico"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <permission android:name="com.tesis.app.medico.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="com.tesis.app.medico.permission.C2D_MESSAGE" />
+    
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tesis.medico.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.NotificacionesActivity"
+            android:label="@string/title_activity_notificaciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.PacientesActivity"
+            android:label="@string/title_activity_pacientes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.DatosActivity"
+            android:label="@string/title_activity_datos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.SolicitudesActivity"
+            android:label="@string/title_activity_solicitudes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.DatosPacienteActivity"
+            android:label="@string/title_activity_datos_paciente"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.DiagnosticoActivity"
+            android:label="@string/title_activity_diagnostico"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.GraficaEstadistica"
+            android:label="@string/title_activity_grafica_estadistica" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.ConfigEstadistica"
+            android:label="@string/title_activity_config_estadistica"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.AlertasPacienteActivity"
+            android:label="@string/title_activity_alertas_paciente"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.ServidorActivity"
+            android:label="@string/title_activity_servidor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.medico.gui.HistorialActivity"
+            android:label="@string/title_activity_historial"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAnoEW7GnmjUI3eP5tOuaVdVUtZ2XcZwzQ" />
+        
+        <receiver
+            android:name=".gui.GCMBroadcastReceiver"
+	        android:permission="com.google.android.c2dm.permission.SEND" >
+         	<intent-filter>
+         	    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+              	<category android:name="com.tesis.app.medico" />
+         	</intent-filter>
+     	</receiver>
+     	<service android:name=".gui.GCMIntentServiceMedico" />
+    </application>
+
+</manifest>
